@@ -1,0 +1,23 @@
+{
+    "window.zoomLevel": -0.5, // UIの拡大率
+    "editor.fontSize": 13, // エディタのフォントサイズ
+    "terminal.integrated.fontSize": 16, // ターミナルのフォントサイズ
+    "debug.console.fontSize": 16, // デバッグコンソールのフォントサイズ
+    "editor.minimap.enabled": false, // 右端のミニマップの表示非表示
+    "workbench.editor.tabSizing": "shrink", //ファイル名に応じたタブ幅
+    "workbench.editor.enablePreview": false, //　ファイルをプレビューで開くか
+    "workbench.editor.enablePreviewFromQuickOpen": false, //　ファイルをプレビューで開くか2
+    "editor.bracketPairColorization.enabled": true, // カッコの始まりと終わりを同色にするか
+    "editor.guides.bracketPairs": true, //　カッコの始まりと終わりにガイドを表示するか
+    "workbench.tree.renderIndentGuides": "always", // ファイルツリーにインデントガイドを表示するか
+    "files.trimTrailingWhitespace": true, // 保存時に行末の余計なスペースを削除
+    "files.insertFinalNewline": true, // 保存時にファイル末尾に改行を入れる
+    "files.trimFinalNewlines": true, // 最終行末以降の空白行を削除
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true // eslintに対応してるファイルのみ保存時にフォーマット
+    },
+    // jsonの自動整形
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+}

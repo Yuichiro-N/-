@@ -1,0 +1,33 @@
+{
+	// TS + React
+	"useState": {
+		"scope": "typescriptreact",
+		"prefix": "us",
+		"body": [
+			"const [${1:state}, set${1/^(.)(.*)$/${1:/upcase}${2}/}] = useState($2)"
+		],
+		"description": "useStateのテンプレート"
+	},
+	"reactfc": {
+		"scope": "typescriptreact",
+		"prefix": "rfc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export const $TM_FILENAME_BASE = () => {",
+			"  return <>$TM_FILENAME_BASE</>",
+			"}",
+			""
+		],
+		"description": "Reactコンポーネントのテンプレート"
+	},
+	// Go
+	"fmt.Println": {
+		"scope": "go",
+		"prefix": "pln",
+		"body": [
+			"fmt.Println(\"$1: \", $1)"
+		],
+		"description": "ログ出力"
+	},
+}
